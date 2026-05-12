@@ -1,0 +1,12 @@
+.productsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
+
+.productsItem {
+    flex: 1 1 calc(22.22% -16px);
+    display: flex;
+    flex-direction: column;
+}
