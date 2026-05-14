@@ -1,5 +1,6 @@
-import Button from "../../components/Button/Button"
-import { useAuth } from "../../hook/useAuth"
+import Button from "../../components/Button/Button";
+import useAuth from "../../hook/useAuth";
+import { useState } from "react";
 
 export function LoginPage(){
     const {login, loading } = useAuth();
@@ -9,13 +10,6 @@ export function LoginPage(){
     async function handleSubmit(e) {
         e.preventDefault();
 
-        if (!email.trim() || !password.trim()){
-            return alert("Preencha todos os campos.");
-        }
-    onLoginSubmit({email, password})
-    setEmail("");
-    setPassword("");
-
     try{
         await login(email, password);
         alert("Login bem sucedido");
@@ -24,22 +18,21 @@ export function LoginPage(){
     }
     }
     return (
+        <>
         <form className="LoginPage" onSubmit={handleSubmit}>
             <div> 
             <label>Email</label>
-                <input type="text" placeholder="Digite seu email" name="email" onChange={(e) => setEmail(e.target.value)} required />
+                <input type="text" placeholder="Digite seu email"  onChange={(e) => setEmail(e.target.value)} required value={email}/>
             <label>Senha</label>
-            <input type="password" placeholder="Digite a senha" name="password" onChange={(e) => setPassword(e.target.value)} required />
+            <input type="password" placeholder="Digite a senha" onChange={(e) => setPassword(e.target.value)} required value={password} />
         
             <Button type="login">{loading ? "Logging in..." : "Login"}</Button>
-        </div>
+        </div>    
+        </form>
         <div>
             <Button type="cancel">Cancelar</Button>
         </div>
-        
-        
-        </form>
-
+        </>
 
     )
 }

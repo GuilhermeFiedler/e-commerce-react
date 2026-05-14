@@ -1,5 +1,6 @@
 import Button from "../../components/Button/Button";
-import { useAuth } from "../../hook/useAuth";
+import useAuth from "../../hook/useAuth";
+import { useState } from "react";
 
 export function RegisterPage() {
   const { register, loading } = useAuth();
@@ -10,13 +11,6 @@ export function RegisterPage() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (!username.trim() || !email.trim() || !password.trim()) {
-      return alert("Preencha todos os campos.");
-    }
-    onRegisterSubmit({ username, email, password });
-    setUsername("");
-    setEmail("");
-    setPassword("");
 
     try {
       await register(username, email, password);
@@ -33,7 +27,7 @@ export function RegisterPage() {
         <input
           type="text"
           placeholder="Insira seu nome de usuário"
-          name="username"
+          value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
@@ -41,17 +35,17 @@ export function RegisterPage() {
         <input
           type="email"
           placeholder="Insira seu email"
-          name="email"
           onChange={(e) => setEmail(e.target.value)}
           required
+          value={email}
         />
         <label>Senha</label>
         <input
           type="password"
           placeholder="Insira sua senha"
-          name="password"
           onChange={(e) => setPassword(e.target.value)}
           required
+          value={password}
         />
       </div>
       <div>

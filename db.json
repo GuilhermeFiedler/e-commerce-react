@@ -1,1 +1,39 @@
-{}
+{
+  "users": [
+    {
+      "email": "oii@gmail",
+      "password": "$2a$10$xxuCuBUmw4X68lI4NTmv3..Rq820x0I7jQCgVgKygMdVFEL.cCKbu",
+      "id": 1
+    },
+    {
+      "email": "oi@gmail",
+      "password": "$2a$10$1Gej2zFYXVyWG0DIKB7LT.noU8duOpwVmNDwBF/VDXj31U22ciAOa",
+      "username": "oiii",
+      "id": 2
+    },
+    {
+      "email": "oi@gmaila",
+      "password": "$2a$10$tlI1APkkutHK7HtCPKumYu1tZctU53ArjRfj/s3h2ehVSaKTOpp6a",
+      "username": "oiii2",
+      "id": 3
+    },
+    {
+      "email": "oi@gmailaaaa",
+      "password": "$2a$10$AMMbfG2yWRiBQoY5/X0/1O5776KWSgraXL49hJfXfzyHxN4.qQp/2",
+      "username": "oiii2",
+      "id": 4
+    },
+    {
+      "email": "oi@gmailaaaa222222",
+      "password": "$2a$10$DCpR3qJ5La2YVxgYqHDezOHfz5l6CV1.JqLv4dio4AQ0s0mVurd2q",
+      "username": "oiii2",
+      "id": 5
+    },
+    {
+      "email": "oi@gmailaaaa222000",
+      "password": "$2a$10$5sJuPLivxWKM5a1.s/BNxuG.a4qd.AUY6ahf6GQAVPtmIAAw87Jtm",
+      "username": "oiii200",
+      "id": 6
+    }
+  ]
+}
