@@ -1,8 +1,17 @@
+import Button from "../../components/Button/Button";
 import { useCart } from "../../hook/useCart"
 
-export default function shopcartPage(){
- const { cartProducts } = useCart();
+export default function ShopcartPage(){
+ const { cartProducts, removeFromCart, addToCart } = useCart();
 
+    if(cartProducts.length === 0){
+        return(
+            <div>
+                <h1>Shopping Cart</h1>
+                <h2>Não há itens no carrinho</h2>
+            </div>
+        )
+    }
     return(
         <div className="cart-body">
             <h1>Shopping Cart</h1>
@@ -13,6 +22,10 @@ export default function shopcartPage(){
                     <p className="cart-product-price">
                         RS$ {product.price}
                     </p>
+                    <Button onClick={() => addToCart(product.id)}></Button>
+                    <Button onClick={() => removeFromCart(product.id)}>
+                        Remover
+                    </Button>
                 </div>
             ))}
             </div>

@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 
 export function useMutation(mutationFn) {
     const [loading, setLoading] = useState(false);
@@ -18,20 +19,4 @@ export function useMutation(mutationFn) {
     }, [mutationFn]);
 
     return { mutate, loading, error };
-}
-
-function CriarProduto({ onSucesso }) {
-    const {mutate, loading, error } = useMutation(
-        (dados)  => api.post('/produtos', dados)
-    );
-
-    const handleSubmit = async (form) => {
-        try {
-            const novaTarefa = await mutate(form);
-            onSucesso(novaTarefa);
-        } catch { /*erro capturado no hook */}
-
-    
-    }
-    return
 }

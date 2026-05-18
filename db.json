@@ -34,22 +34,32 @@
       "password": "$2a$10$5sJuPLivxWKM5a1.s/BNxuG.a4qd.AUY6ahf6GQAVPtmIAAw87Jtm",
       "username": "oiii200",
       "id": 6
+    },
+    {
+      "email": "oi@gmailwww",
+      "password": "$2a$10$E7WJOsTnENPXtZ7kmsiW0ut4dGjpW8AQ3bbZAV.H62kjYYuJ6PQcS",
+      "username": "guiiwwww",
+      "id": 7
     }
   ],
-  "products": [{
-    "title": "Tênis Adidas",
-    "image": "",
-    "price": 45.9,
-    "id": 1
-  },{
-    "title": "Tênis Nike",
-    "image": "",
-    "price": 23.99,
-    "id": 2
-  },{
-    "title": "Camiseta Adidas",
-    "image": "",
-    "price": 9.14,
-    "id": 3
-  }]
+  "products": [
+    {
+      "title": "Tênis Adidas",
+      "image": "",
+      "price": 45.9,
+      "id": 1
+    },
+    {
+      "title": "Tênis Nike",
+      "image": "",
+      "price": 23.99,
+      "id": 2
+    },
+    {
+      "title": "Camiseta Adidas",
+      "image": "",
+      "price": 9.14,
+      "id": 3
+    }
+  ]
 }
