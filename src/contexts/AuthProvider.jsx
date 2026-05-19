@@ -16,10 +16,14 @@ export default function AuthProvider({ children }) {
         try{
             const res  = await api.post("/login", { email, password});
 
-            const token = res.acessToken;
+            const token = res.accessToken;
             localStorage.setItem("token", token);
             const userApi = res.user;
             localStorage.setItem('user', JSON.stringify(userApi))
+
+            setUser({
+                token, user: userApi
+            })
         } finally {
             setLoading(false);
         } }, [])
@@ -28,10 +32,10 @@ export default function AuthProvider({ children }) {
         setLoading(true);
         try{
             const res = await api.post("/register", {username, email, password})
-            const token = res.acessToken;
+            const token = res.accessToken;
             localStorage.setItem("token", token);
             
-        setUser({ token: res.acessToken, user: res.user});
+        setUser({ token: res.accessToken, user: res.user});
          
         return res;
         

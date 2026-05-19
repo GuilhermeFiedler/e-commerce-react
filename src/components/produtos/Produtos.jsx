@@ -5,13 +5,7 @@ import useListaProdutoUtils from "../../hook/useListaProdutoUtils";
 
 export default function Produtos(){
     const products = useListaProdutoUtils();
-    //const [searchParams, setSearchParams] = useSearchParams();
-    //const busca = searchParams.get('busca') || '';
-    //const pagina = parseInt(searchParams.get('pagina') || '1');
-
-    /*const handleBusca = (termo) => {
-        setSearchParams({busca: termo, pagina: '1'})
-    } WIP: paginação e busca*/
+    
     return (
         <div >
         <h1>Lista de Produtos</h1>
