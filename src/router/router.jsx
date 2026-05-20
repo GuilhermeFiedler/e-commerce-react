@@ -5,15 +5,16 @@ import ProdutoDetalhe from "../components/detalhe/ProdutoDetalhe"
 import { LoginPage } from "../pages/loginPage/LoginPage"
 import { RegisterPage } from "../pages/registerPage/RegisterPage"
 import ShopcartPage from "../pages/shopcartPage/ShopcartPage"
+import RotaProtegida from "../components/RotaProtegida"
 
 export const router = createBrowserRouter(
     [
    {path:"/", element: <Homepage/>},
    { path:"/produtos", element: <Produtos/> },
-   { path:"/products/:id", element: <ProdutoDetalhe /> },
+   { path:"/produtos/:id", element: <ProdutoDetalhe /> },
    { path: "/login", element: <LoginPage />},
    { path: "/register", element: <RegisterPage />},
-   { path: "/shoppingCart", element: < ShopcartPage />},
+   { path: "/shoppingCart", element: <RotaProtegida>< ShopcartPage /></RotaProtegida> },
    { path:"/home", element: <Navigate to="/" replace /> },
     ]
 ) 

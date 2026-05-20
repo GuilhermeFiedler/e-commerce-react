@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { api } from "../../services/api";
+
 export default function ProdutoDetalhe(){
     const {id} = useParams();
     const [product, setProduct] = useState(null);
@@ -11,7 +12,7 @@ export default function ProdutoDetalhe(){
         try{
             const res = await api.get(`/products/${id}`)
 
-            setProduct(res.data);
+            setProduct(res);
         } catch(err){
             console.error(err);
         } finally {

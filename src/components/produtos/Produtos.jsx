@@ -1,6 +1,5 @@
-import CardItem from "../cardItem/cardItem";
+import CardItem from "../cardItem/CardItem";
 import styles from "./Produtos.module.css"
-//import { useSearchParams } from "react-router-dom";
 import useListaProdutoUtils from "../../hook/useListaProdutoUtils";
 
 export default function Produtos(){

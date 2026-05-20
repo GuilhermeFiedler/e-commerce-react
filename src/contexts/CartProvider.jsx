@@ -23,7 +23,7 @@ export default function CartProvider({ children }) {
       productId: product.id,
       quantity: 1,
     });
-    return res.data;
+    return res;
   });
 
   const {
@@ -79,6 +79,9 @@ export default function CartProvider({ children }) {
   }
 
   async function updateCartProduct(cartItemId, quantity) {
+    if (quantity <= 0){
+      return deleteFromCart(cartItemId)
+    }
     try {
       await updateMutation({ cartItemId, quantity });
       setCartProducts((prevProducts) =>
@@ -92,9 +95,9 @@ export default function CartProvider({ children }) {
   }
 
   async function loadCart(userId){
-    const res = await api.get(`/shoppingcart?userId=${userId}`)
+    const res = await api.get(`/shoppingcart?userId=${userId}&_expand=product`)
 
-    setCartProducts(res.data)
+    setCartProducts(res)
   }
 
   useEffect(() => {
