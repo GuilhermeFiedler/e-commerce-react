@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button/Button";
 import useAuth from "../../hook/useAuth";
 import { useState } from "react";
@@ -8,6 +9,8 @@ export function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+ const navigate = useNavigate();
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -15,8 +18,10 @@ export function RegisterPage() {
     try {
       await register(username, email, password);
       alert("Usuário cadastrado");
+
+      navigate("/home")
     } catch (err) {
-      alert(err.message);
+      alert(err.message)
     }
   }
 
@@ -49,7 +54,7 @@ export function RegisterPage() {
         />
       </div>
       <div>
-        <Button type="cancel">Cancelar</Button>
+        <Button type="cancel" onClick={() => {navigate("/home")}}>Cancelar</Button>
         <Button type="register">{loading ? "Cadastrando..." : "Cadastrar-se"}</Button>
       </div>
     </form>
