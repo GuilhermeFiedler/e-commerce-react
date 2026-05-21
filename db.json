@@ -40,6 +40,42 @@
       "password": "$2a$10$E7WJOsTnENPXtZ7kmsiW0ut4dGjpW8AQ3bbZAV.H62kjYYuJ6PQcS",
       "username": "guiiwwww",
       "id": 7
+    },
+    {
+      "email": "guilherme@gmail.com",
+      "password": "$2a$10$MRSDzNOFkHDYanDfiQISPOHMDRuT1L9AKpQFM9yKRtDwZKwPg/fTy",
+      "username": "guilherme",
+      "id": 8
+    },
+    {
+      "email": "guilhermet@gmail",
+      "password": "$2a$10$EGU7by34r1HH7O996dg/ku4qRaWGttMECfcVx.WecJqMSHdBYTUXC",
+      "username": "gui",
+      "id": 9
+    },
+    {
+      "email": "carrinho@gmail",
+      "password": "$2a$10$lLCyWAe8z8Rf911YA/KzlOH/o/y9bCGjNeHeTl2np2UlZ53qRBcr2",
+      "username": "carrinho",
+      "id": 10
+    },
+    {
+      "email": "oirrr@ga",
+      "password": "$2a$10$53teyHfnkzmY2qGQ8t1b3eCqSbmDgndkhIqnDHIw1ljKizizM9c2q",
+      "username": "oi",
+      "id": 11
+    },
+    {
+      "email": "teste@gmail",
+      "password": "$2a$10$cBj.5WMkXavaSbQxvj3mUOJFmoSNMOfDpC1AOUpZJ3wmJ/jMK5uc.",
+      "username": "teste",
+      "id": 12
+    },
+    {
+      "email": "jon@gmail.com",
+      "password": "$2a$10$rNUcdBXlXxlMlzY8xcKkNe9HjuIweiZ6rzUBZ8AJs7NJEdIBTc4ea",
+      "username": "jon",
+      "id": 13
     }
   ],
   "products": [
@@ -60,6 +96,40 @@
       "image": "",
       "price": 9.14,
       "id": 3
+    }
+  ],
+  "shoppingcart": [
+    {
+      "quantity": 4,
+      "id": 1
+    },
+    {
+      "quantity": 7,
+      "id": 2
+    },
+    {
+      "userId": 9,
+      "productId": 3,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "userId": 9,
+      "productId": 1,
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "userId": 13,
+      "productId": 1,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "userId": 13,
+      "productId": 2,
+      "quantity": 1,
+      "id": 6
     }
   ]
 }

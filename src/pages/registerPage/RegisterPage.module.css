@@ -1,0 +1,54 @@
+.RegisterPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #b8f2e6, #aed9e0, #9bf6ff);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.RegisterPage label {
+  color: #2f6f6f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.RegisterPage input {
+  padding: 12px;
+  border: 2px solid #9adfdc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background-color: #f7ffff;
+  transition: 0.3s;
+}
+
+
+.RegisterPage input:focus {
+  border-color: #4ecdc4;
+  box-shadow: 0 0 8px rgba(78, 205, 196, 0.4);
+}
+
+.RegisterPage input::placeholder {
+  color: #7aa9a8;
+}
+
+.RegisterPage > div:last-child {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 480px) {
+  .RegisterPage > div:first-child {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .RegisterPage > div:last-child {
+    flex-direction: column;
+    width: 100%;
+  }
+}

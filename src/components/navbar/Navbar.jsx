@@ -8,27 +8,31 @@ import useAuth from "../../hook/useAuth";
 export default function Navbar() {
     const {user} = useAuth();
   return (
-    <nav className="Navbar">
+    <nav className="navbar">
+        <div className="navbar-left">
       <NavLink to="/" className="home">
-        Home
+        Plantae
       </NavLink>
 
-      <NavLink to="/produtos">Produtos</NavLink>
+      <NavLink to="/produtos" className="nav-link">Produtos</NavLink>
+      </div>
+      <div className="navbar-right">
+        <NavLink to="/shoppingCart" className="icon-link">
+        <FaShoppingCart />
+      </NavLink>
       {!user && (
-        <NavLink to="/login">
+        <NavLink to="/login" className="icon-link">
           <CiLogin />
         </NavLink>
       )}
       {user && <ButtonLogout />}
-      <ButtonTheme />
-      <NavLink to="/shoppingCart">
-        <FaShoppingCart />
-      </NavLink>
       {!user && (
-        <NavLink to="/register" className="registerbtn">
+        <NavLink to="/register" className="btnRegisterNav">
           Cadastre-se
         </NavLink>
       )}
+      <ButtonTheme />
+      </div>
     </nav>
   );
 }

@@ -1,5 +1,5 @@
 :root {
-  --text: #6b6375;
+  --text: #0e0815;
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
@@ -17,7 +17,6 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
