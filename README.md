@@ -16,8 +16,10 @@ Aplicação de e-commerce básica com: React Router (Home, Produtos, Detalhe, Ca
 ## ▶️ Como executar o projeto
 
 * No terminal, execute esses comandos: npm install
-* npm run dev
-
+```bash
+npm run dev
+```
 * --outro terminal:
-* npx json-server-auth db.json
-  
+```bash
+npx json-server-auth db.json
+```
