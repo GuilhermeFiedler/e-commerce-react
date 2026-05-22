@@ -1,7 +1,6 @@
 import Button from "../../components/Button/Button";
 import useAuth from "../../hook/useAuth";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import styles from "./LoginPage.module.css"
 import { useNavigate } from "react-router-dom";
 

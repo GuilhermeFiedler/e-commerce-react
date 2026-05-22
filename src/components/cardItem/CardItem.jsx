@@ -12,7 +12,7 @@ export default function CardItem({ product }) {
       <div className={styles.cardBody}>
         <h3 className={styles.cardItemTitle}>{product.title}</h3>
         <div className={styles.cardImg}>
-          <img src={product.img} alt={product.title} />
+          <img src={product.image} alt={product.title} />
         </div>
         <div className={styles.cardPrice}>R${product.price}</div>
         <div className={styles.cardButtons}>

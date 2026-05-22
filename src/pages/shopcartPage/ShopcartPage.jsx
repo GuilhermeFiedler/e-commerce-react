@@ -19,11 +19,12 @@ export default function ShopcartPage(){
             {cartProducts.map((item) => (
                 <div key={item.id}>
                     <h3>{item.product?.title || item.title}</h3>
+                    <img src={item.product?.image} alt={item.product?.title} className={styles.cartImage}/>
                     <p className={styles.cartProductPrice}>
                         R$ {item.product?.price}
                     </p>
                     <p>Qtd: {item.quantity}</p>
-                    <p>Subtotal: R$ {item.product?.price * item.quantity}</p>
+                    <p>Subtotal: R$ {(item.product?.price * item.quantity).toFixed(2)}</p>
                     <Button onClick={() => updateCartProduct(item.id, item.quantity +1)}>Adicionar unidade</Button>
                     <Button onClick={() => updateCartProduct(item.id, item.quantity -1)}>Remover unidade</Button>
                     <Button onClick={() => deleteFromCart(item.id)}>
@@ -32,7 +33,7 @@ export default function ShopcartPage(){
                 </div>
             ))}
             </div>
-            <h2>Total: R$ {total}</h2>
+            <h2>Total: R$ {(total).toFixed(2)}</h2>
         </div>
     )
 }

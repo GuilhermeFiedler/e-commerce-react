@@ -81,19 +81,19 @@
   "products": [
     {
       "title": "Tênis Adidas",
-      "image": "",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.5b_lFbaNqJkpZD67SoBZNgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
       "price": 45.9,
       "id": 1
     },
     {
       "title": "Tênis Nike",
-      "image": "",
+      "image": "https://imgcentauro-a.akamaihd.net/900x900/94313732/tenis-nike-revolution-5-masculino-img.jpg",
       "price": 23.99,
       "id": 2
     },
     {
       "title": "Camiseta Adidas",
-      "image": "",
+      "image": "https://a-static.mlcdn.com.br/undefinedxundefined/camiseta-essentials-3-stripes-branca-adidas/lojacasadotenista/93875/3b1362fe47be7f562d1de3737642b91c.jpeg",
       "price": 9.14,
       "id": 3
     }
@@ -130,6 +130,26 @@
     {
       "quantity": 2,
       "id": 7
+    },
+    {
+      "quantity": 4,
+      "id": 8
+    },
+    {
+      "quantity": 2,
+      "id": 9
+    },
+    {
+      "quantity": 2,
+      "id": 10
+    },
+    {
+      "quantity": 41,
+      "id": 11
+    },
+    {
+      "quantity": 26,
+      "id": 12
     }
   ]
 }

@@ -9,11 +9,10 @@
 }
 
 .productsBody {
-  background: linear-gradient(135deg, #b8f2e6, #aed9e0, #9bf6ff);
   min-height: 100vh;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #b8f2e6, #aed9e0, #9bf6ff);
   font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 .productsItem {
   display: flex;
