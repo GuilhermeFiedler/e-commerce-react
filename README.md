@@ -19,7 +19,7 @@ Aplicação de e-commerce básica com: React Router (Home, Produtos, Detalhe, Ca
 ```bash
 npm run dev
 ```
-* --outro terminal:
+* outro terminal:
 ```bash
 npx json-server-auth db.json
 ```
