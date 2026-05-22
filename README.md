@@ -1,18 +1,23 @@
-# React + Vite
+# Notas Pessoais - React
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JSON Server](https://img.shields.io/badge/JSON_Server-000000?style=for-the-badge&logo=json&logoColor=white)
+## 📚 Sobre o Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de e-commerce básica com: React Router (Home, Produtos, Detalhe, Carrinho, Login), AuthContext para autenticação, ThemeContext para dark mode, serviço de API centralizado, e rota protegida para o carrinho.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React
+* Json-server-auth
+* Vite
+* React-icons
 
-## React Compiler
+## ▶️ Como executar o projeto
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* No terminal, execute esses comandos: npm install
+* npm run dev
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* --outro terminal:
+* npx json-server-auth db.json
+  
