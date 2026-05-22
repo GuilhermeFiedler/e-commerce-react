@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav className="navbar">
         <div className="navbar-left">
       <NavLink to="/" className="home">
-        Plantae
+        E-Commerce
       </NavLink>
 
       <NavLink to="/produtos" className="nav-link">Produtos</NavLink>

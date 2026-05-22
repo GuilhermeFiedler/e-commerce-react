@@ -120,16 +120,16 @@
       "id": 4
     },
     {
-      "userId": 13,
-      "productId": 1,
-      "quantity": 1,
+      "quantity": 3,
       "id": 5
     },
     {
-      "userId": 13,
-      "productId": 2,
-      "quantity": 1,
+      "quantity": 8,
       "id": 6
+    },
+    {
+      "quantity": 2,
+      "id": 7
     }
   ]
 }

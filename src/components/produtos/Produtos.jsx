@@ -6,7 +6,7 @@ export default function Produtos(){
     const products = useListaProdutoUtils();
     
     return (
-        <div >
+        <div className={styles.productsBody}>
         <h1>Lista de Produtos</h1>
         <ul className={styles.productsList}>
         {products.map((product) => (

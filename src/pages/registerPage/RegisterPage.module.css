@@ -9,6 +9,19 @@
   flex-direction: column;
 }
 
+.RegisterPage > div:first-child {
+  background-color: white;
+  padding: 40px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  width: 100%;
+  max-width: 420px;
+}
+
 .RegisterPage label {
   color: #2f6f6f;
   font-size: 15px;
@@ -25,7 +38,6 @@
   transition: 0.3s;
 }
 
-
 .RegisterPage input:focus {
   border-color: #4ecdc4;
   box-shadow: 0 0 8px rgba(78, 205, 196, 0.4);
@@ -35,20 +47,9 @@
   color: #7aa9a8;
 }
 
-.RegisterPage > div:last-child {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-}
-
 @media (max-width: 480px) {
   .RegisterPage > div:first-child {
     width: 100%;
     padding: 30px 20px;
-  }
-
-  .RegisterPage > div:last-child {
-    flex-direction: column;
-    width: 100%;
   }
 }

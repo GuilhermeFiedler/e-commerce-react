@@ -23,7 +23,7 @@ export function LoginPage(){
     }
     return (
         <>
-        <form className="LoginPage" onSubmit={handleSubmit}>
+        <form className={styles.LoginPage} onSubmit={handleSubmit}>
             <div> 
             <label>Email</label>
                 <input type="text" placeholder="Digite seu email"  onChange={(e) => setEmail(e.target.value)} required value={email}/>
@@ -31,11 +31,9 @@ export function LoginPage(){
             <input type="password" placeholder="Digite a senha" onChange={(e) => setPassword(e.target.value)} required value={password} />
         
             <Button type="login">{loading ? "Logging in..." : "Login"}</Button>
+            <Button onClick={() => navigate("/home")}>Cancelar</Button>
         </div>    
         </form>
-        <div>
-            <Link className="register-link" to="/home">Cancelar</Link>
-        </div>
         </>
 
     )

@@ -8,14 +8,14 @@ export default function CardItem({ product }) {
   const { addToCart, addLoading } = useCart();
 
   return (
-    <Link to={`/produtos/${product.id}`}>
+    <Link className={styles.cardLink}to={`/produtos/${product.id}`}>
       <div className={styles.cardBody}>
-        <h3 className="card-item-title">{product.title}</h3>
-        <div className="cardImg">
+        <h3 className={styles.cardItemTitle}>{product.title}</h3>
+        <div className={styles.cardImg}>
           <img src={product.img} alt={product.title} />
         </div>
-        <div className="card-price">RS${product.price}</div>
-        <div className="card-buttons">
+        <div className={styles.cardPrice}>R${product.price}</div>
+        <div className={styles.cardButtons}>
         <Button
             type="addItem"
             onClick={(e) => {

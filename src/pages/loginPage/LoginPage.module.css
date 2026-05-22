@@ -1,0 +1,55 @@
+.LoginPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #b8f2e6, #aed9e0, #9bf6ff);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.LoginPage > div:first-child {
+  background-color: white;
+  padding: 40px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  width: 100%;
+  max-width: 420px;
+}
+
+.LoginPage label {
+  color: #2f6f6f;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.LoginPage input {
+  padding: 12px;
+  border: 2px solid #9adfdc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background-color: #f7ffff;
+  transition: 0.3s;
+}
+
+.LoginPage input:focus {
+  border-color: #4ecdc4;
+  box-shadow: 0 0 8px rgba(78, 205, 196, 0.4);
+}
+
+.LoginPage input::placeholder {
+  color: #7aa9a8;
+}
+
+@media (max-width: 480px) {
+  .LoginPage > div:first-child {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
