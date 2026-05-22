@@ -1,8 +1,8 @@
 .btn {
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
-     background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: white;
   color: #2f6f6f;
   padding: 10px 18px;
   border-radius: 10px;
@@ -11,29 +11,6 @@
 }
 
 .btn:hover {
-    background-color: #dffcfb;
-    transform: translateY(-2px);
+  background-color: #dffcfb;
+  transform: translateY(-2px);
 }
-/*
-.btn-register:hover {
-    background-color: #4ecdc4;
-    color: white;
-    transform: translateY(-2px);
-}
-.btn-register {
-    background-color: #38b2ac;
-}
-/*
-.btn-logout {
-  background-color: white;
-  color: #2f6f6f;
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: 0.3s;
-
-}
-.btn-logout:hover {
-    background-color: #dffcfb;
-    transform: translateY(-2px);
-} */
